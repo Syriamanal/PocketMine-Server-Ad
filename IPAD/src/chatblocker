@@ -1,11 +1,20 @@
 <?php
-namespace ipad;
+namespace IPAD;
 use pocketmine\plugin\PluginBase;
-class ChatBlocker extends PluginBase implements Listener{
-	public function onEnable(){
- Server::getInstance()->broadcastMessage("IP Ad Is Running!);
+use pocketmine\event\player\PlayerJoinEvent;
+use pocketmine\event\Listener;
+use pocketmine\Player;
+use pocketmine\Server;
+ 
+class Main extends PluginBase {
+	public function onRun($player)
+	{
+		        $player = $this->player;
+                $player->sendPopup("Welcome To Quantum Works MC");
 	}
-	public function post($ip){	
-
-	}
+        public function onEnable (){
+        $this->getLogger()->info("I've been loaded!");
+               
+        }
+       
 }
