@@ -1,15 +1,6 @@
-name: IPADD
-version: 1.0.0
-api: 1.8.0
-main: IPAD\IPAD
+name: IPAD
 author: Syriamanal
-permissions:
-  ipad:
-    description: Makes A Ad To Show Your Server IP
-    children:
-      ipad.bypaas:
-        description: Makes A Ad To Show Your Server IP
-        default: op
-      ipad.moderate:
-        description: "Put the server ip in the config.yml file"
-        default: op
+description: Displays Your Servers IP
+version: 1.0.0
+main: IPAD\Main
+api: 1.2.0
